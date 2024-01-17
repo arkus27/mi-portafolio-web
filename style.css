@@ -1,5 +1,4 @@
 /* Estilos generales */
-
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -23,10 +22,10 @@ header h1 {
 
 /* Estilos para las secciones */
 section {
-  background-color: rgba(0, 123, 255, 0.4);
+  background-color: #817c7c; /* Fondo blanco */
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
@@ -34,26 +33,24 @@ section {
 section h2 {
   margin-top: 0;
   font-size: 1.5em;
-  color: #5c2a5a; /* Color de título con transparencia */
+  color: #3498db; /* Azul brillante */
 }
 
 /* Estilos para el pie de página */
 footer {
   text-align: center;
   padding: 10px 0;
-  background-color: rgba(
-    0,
-    123,
-    255,
-    0.9
-  ); /* Pie de página con transparencia */
+  background-color: #3498db; /* Azul brillante */
   color: #fff;
-  a {
-    display: inline; /* Hace que el enlace se comporte como texto */
-    padding: 5px; /* Aumenta el área de clic sin afectar visualmente */
-    background-color: rgba(0, 123, 255, 0.4);
-    text-decoration: none; /* Elimina el subrayado predeterminado */
-    color: #333;
-    border-radius: 3px;
-  }
+}
+
+/* Estilos para los enlaces en el pie de página */
+footer a {
+  display: inline; /* Hace que el enlace se comporte como texto */
+  padding: 5px; /* Aumenta el área de clic sin afectar visualmente */
+  background-color: #fff; /* Fondo blanco */
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  color: #3498db; /* Azul brillante */
+  border-radius: 3px;
+  margin: 0 5px; /* Agrega un pequeño margen entre enlaces */
 }
