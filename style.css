@@ -1,0 +1,62 @@
+/* Estilos generales */
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("imagenes/cielo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(245, 245, 245, 0.9); /* Fondo con transparencia */
+  color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: rgba(0, 123, 255, 0.9); /* Encabezado con transparencia */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Estilos para las secciones */
+section {
+  background-color: rgba(0, 123, 255, 0.4);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+  margin-bottom: 20px;
+}
+
+/* Estilos para los títulos de las secciones */
+section h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #5c2a5a; /* Color de título con transparencia */
+}
+
+/* Estilos para el pie de página */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgba(
+    0,
+    123,
+    255,
+    0.9
+  ); /* Pie de página con transparencia */
+  color: #fff;
+  a {
+    display: inline; /* Hace que el enlace se comporte como texto */
+    padding: 5px; /* Aumenta el área de clic sin afectar visualmente */
+    background-color: rgba(0, 123, 255, 0.4);
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    color: #333;
+    border-radius: 3px;
+  }
+}

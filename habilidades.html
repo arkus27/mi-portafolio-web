@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mis Habilidades</title>
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #2c3e50; /* Fondo del cuerpo - Azul oscuro */
+        color: #ecf0f1; /* Color del texto */
+      }
+
+      header {
+        background-color: #3498db; /* Azul brillante */
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      section {
+        background-color: #fff; /* Fondo del contenido */
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      h2 {
+        margin-top: 0;
+        font-size: 1.8em;
+        color: #333;
+      }
+
+      .habilidad {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .habilidad h3 {
+        font-size: 1.5em;
+        color: #007bff; /* Azul llamativo */
+        margin-top: 0;
+      }
+
+      .habilidad p {
+        margin-top: 10px;
+        color: #555;
+      }
+
+      .flecha {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        fill: #007bff;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .flecha:hover {
+        transform: scale(1.2);
+      }
+
+      #volver {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Mis Habilidades</h1>
+    </header>
+
+    <section id="programacion">
+      <h2>Programación</h2>
+      <div class="flecha" onclick="toggleInformacion(this)">
+        <svg viewBox="0 0 24 24">
+          <path d="M7 10l5 5 5-5z"></path>
+        </svg>
+      </div>
+      <div class="habilidad">
+        <h3>Pensamiento Lógico</h3>
+        <p>
+          Mi experiencia no solo radica en la programación, sino en el arte de
+          resolver problemas de manera innovadora. Abrazo el desafío de
+          encontrar soluciones y, a su vez, estoy constantemente tejiendo nuevas
+          ideas mediante el poder del pensamiento lógico en la programación.
+          ¡Descubre conmigo un universo donde la creatividad y la lógica
+          convergen para superar cualquier obstáculo! 🚀💡
+        </p>
+        <div class="flecha" onclick="toggleInformacion(this)">
+          <svg viewBox="0 0 24 24">
+            <path d="M7 10l5 5 5-5z"></path>
+          </svg>
+        </div>
+        <embed
+          src="imagenes/diploma-pensamiento-logico-data.pdf"
+          width="400px"
+          height="400px"
+          type="application/pdf"
+        />
+      </div>
+      <!-- Puedes agregar más habilidades de programación -->
+    </section>
+
+    <section id="idiomas">
+      <h2>Idiomas</h2>
+      <div class="flecha" onclick="toggleInformacion(this)">
+        <svg viewBox="0 0 24 24">
+          <path d="M7 10l5 5 5-5z"></path>
+        </svg>
+      </div>
+      <div class="habilidad">
+        <h3>Español Nativo</h3>
+        <p>
+          Como hablante nativo de español, tengo un profundo conocimiento y
+          comprensión de la lengua y la cultura hispana. Esta habilidad no solo
+          me permite comunicarme eficientemente en español, sino que también me
+          proporciona una perspectiva única y auténtica al trabajar en proyectos
+          relacionados con la lengua y la cultura. Estoy comprometido a utilizar
+          mi dominio del español para facilitar una comunicación clara y
+          efectiva en cualquier entorno.
+        </p>
+      </div>
+      <div class="habilidad">
+        <h3>Inglés B1 (En Proceso)</h3>
+        <p>
+          Actualmente, estoy trabajando para mejorar y perfeccionar mi nivel de
+          inglés, certificado en el nivel B1. A través de cursos, práctica
+          constante y exposición a entornos donde el inglés es fundamental,
+          estoy fortaleciendo mis habilidades en lectura, escritura,
+          conversación y comprensión auditiva. Esta dedicación continua refleja
+          mi compromiso de ampliar mis horizontes y participar activamente en un
+          mundo cada vez más globalizado.
+        </p>
+      </div>
+      <div class="habilidad">
+        <h3>Portugués B1 (En Desarrollo)</h3>
+        <p>
+          Estoy actualmente inmerso en el proceso de mejorar y consolidar mi
+          conocimiento del portugués, certificado en el nivel B1. A través de
+          práctica constante, participación en cursos especializados y la
+          exposición a contextos donde el portugués es esencial, estoy
+          fortaleciendo mis habilidades en lectura, escritura, conversación y
+          comprensión auditiva en este hermoso idioma. Este viaje de aprendizaje
+          refleja mi compromiso de explorar nuevas fronteras y comunicarme
+          efectivamente en un entorno lusófono.
+        </p>
+      </div>
+
+      <!-- Puedes agregar más habilidades en idiomas -->
+    </section>
+
+    <section id="desarrollo-personal">
+      <h2>Desarrollo Personal</h2>
+      <div class="flecha" onclick="toggleInformacion(this)">
+        <svg viewBox="0 0 24 24">
+          <path d="M7 10l5 5 5-5z"></path>
+        </svg>
+      </div>
+      <div class="habilidad">
+        <h3>Liderazgo</h3>
+        <p>
+          Experiencia en roles de liderazgo con habilidades de motivación y toma
+          de decisiones.
+        </p>
+      </div>
+      <!-- Puedes agregar más habilidades de desarrollo personal -->
+    </section>
+
+    <!-- Puedes agregar más secciones según tus necesidades -->
+
+    <button id="volver" onclick="window.location.href='index.html'">
+      Volver al Inicio
+    </button>
+
+    <script>
+      function toggleInformacion(flecha) {
+        var habilidad = flecha.parentNode;
+        var parrafo = habilidad.querySelector(".habilidad p");
+        parrafo.style.display =
+          parrafo.style.display === "none" || parrafo.style.display === ""
+            ? "block"
+            : "none";
+        flecha.innerHTML =
+          parrafo.style.display === "none" || parrafo.style.display === ""
+            ? '<svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"></path></svg>'
+            : '<svg viewBox="0 0 24 24"><path d="M14 10l-5 5-5-5z"></path></svg>';
+      }
+    </script>
+  </body>
+</html>

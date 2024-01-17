@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Biografía de Gabriel</title>
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #2c3e50; /* Fondo del cuerpo - Azul oscuro */
+        color: #ecf0f1; /* Color del texto */
+      }
+
+      header {
+        background-color: #3498db; /* Azul brillante */
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2em;
+      }
+
+      nav {
+        text-align: center;
+        background-color: #007bff;
+        padding: 10px 0;
+      }
+
+      nav a {
+        color: #413f3f;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+      }
+
+      section {
+        background-color: #ffffff58;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      section h2 {
+        margin-top: 0;
+        font-size: 1.5em;
+        color: #007bff;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color:#34495e;
+        color: #fff;
+      }
+
+      #volver {
+        display: block;
+        margin-top: 20px;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      section input[type="file"] {
+        display: none;
+      }
+
+      
+       section img {
+            max-width: 30%; /* La imagen no superará el 100% del ancho de su contenedor */
+            height: 30%; /* La altura se ajustará automáticamente para mantener la proporción de aspecto original */
+            border-radius: 10px; /* Bordes redondeados para la imagen */
+        }
+
+        
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        ¡Explora el Universo de Gabriel!<br />Un Portafolio en Constante
+        Evolución
+      </h1>
+    </header>
+
+    <section id="biografia">
+      <h2>Biografía</h2>
+
+      <input
+        type="file"
+        id="fileInput"
+        accept="image/*"
+        onchange="displayImage(this)"
+      />
+      
+
+      
+    
+
+       <p>
+        Hola! Soy Gabriel Arrieta Bustinza, un entusiasta estudiante de
+        Ingeniería de Software inmerso en el emocionante mundo del desarrollo.
+        Mi enfoque se centra en el desarrollo web, donde mi pasión por crear
+        experiencias digitales toma forma a través de la combinación precisa de
+        HTML, CSS y JavaScript.</p>
+        <p> En mi viaje como estudiante, no solo aprendo los
+        fundamentos, sino que también aplico mis conocimientos en proyectos
+        universitarios de desarrollo web. Estos desafíos han sido el campo de
+        juego perfecto para perfeccionar mis habilidades, explorar nuevas ideas
+        y entender la importancia de un código limpio y eficiente.</p>
+         <p> Ademas de mi devoción por el desarrollo web, encuentro fascinación en la creación de
+        videojuegos utilizando la potencia de Unity. Visualizo un futuro donde
+        mi experiencia en Ingeniería de Software se funde con mi pasión por la
+        narrativa interactiva, aspirando a desarrollar experiencias envolventes
+        y cautivadoras para los jugadores.</p> 
+        <p>Estoy ansioso por unirme a un equipo
+        donde pueda aplicar mis habilidades y contribuir con mi creatividad. Mi
+        objetivo es seguir aprendiendo y creciendo en el campo del desarrollo,
+        aportando soluciones innovadoras y siendo parte de proyectos que
+        desafíen y motiven mi pasión por la programación. ¡El viaje apenas
+        comienza, y estoy emocionado por ser parte del futuro de la tecnología!</p>
+      </p>
+      <img src="imagenes/fotito.jpeg" alt="fotito">
+
+      <h2>Hobbies</h2>
+      <p>En mi tiempo libre, me sumerjo en la emocionante cancha de baloncesto y el campo de fútbol de mi universidad, donde el espíritu competitivo y la camaradería se fusionan. Soy un verdadero fanático de estos deportes, ¡cada juego es una nueva aventura!</p>
+
+        
+
+     
+<p>Cuando no estoy en el terreno de juego, me sumerjo en el emocionante universo de los videojuegos. Desde partidas intensas en Overwatch 2 y Fortnite hasta explorar los misterios de Elden Ring, encuentro en los videojuegos una fuente constante de inspiración y entretenimiento.</p>
+
+        
+
+      
+<p>Además, me encanta compartir mi pasión por los videojuegos a través de transmisiones en mi cuenta de Twitch.   ¡Acompáñame en mis aventuras virtuales y sé parte de la comunidad ✨!</p>
+
+  <a href="https://www.twitch.tv/arkuzzz" target="_blank">Arkuzzz</a>      
+
+  
+<p>No solo me conformo con lo académico; siempre estoy en busca de nuevos conocimientos. Mi amor por la programación se extiende más allá de las aulas universitarias; invierto mi tiempo aprendiendo de forma autodidacta mediante cursos en línea y vídeos en YouTube.</p>
+
+        
+
+<p>Estoy emocionado por el futuro y la oportunidad de contribuir con mi pasión y habilidades al mundo del desarrollo de software.</p>
+
+      <a href="index.html" id="volver">Volver al Inicio</a>
+    </section>
+
+    <footer>
+      <!-- Pie de página existente... -->
+    </footer>
+
+    <script>
+      document.getElementById("volver").addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      function displayImage(input) {
+        const selectedImage = document.getElementById("selectedImage");
+        const label = document.querySelector("label[for='fileInput']");
+
+        if (input.files && input.files[0]) {
+          const reader = new FileReader();
+
+          reader.onload = function (e) {
+            selectedImage.src = e.target.result;
+            selectedImage.style.display = "block";
+            label.style.display = "none";
+          };
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+    </script>
+  </body>
+</html>
