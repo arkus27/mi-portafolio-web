@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Mis Habilidades</title>
+    <title>Mi Portafolio</title>
     <style>
       body {
         font-family: "Montserrat", sans-serif;
@@ -17,10 +17,34 @@
         color: #fff;
         text-align: center;
         padding: 20px 0;
+        position: relative;
+      }
+
+      header img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+
+      h1 {
+        margin: 10px 0;
+      }
+
+      nav {
+        text-align: center;
+        background-color: #3498db; /* Azul brillante */
+        padding: 10px 0;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
       }
 
       section {
-        background-color: #fff; /* Fondo del contenido */
+        background-color: #ecf0f1; /* Fondo del contenido - Gris claro */
         padding: 20px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -53,21 +77,6 @@
         color: #555;
       }
 
-      .flecha {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 20px;
-        height: 20px;
-        fill: #007bff;
-        cursor: pointer;
-        transition: transform 0.3s ease-in-out;
-      }
-
-      .flecha:hover {
-        transform: scale(1.2);
-      }
-
       #volver {
         background-color: #007bff;
         color: #fff;
@@ -81,16 +90,19 @@
   </head>
   <body>
     <header>
-      <h1>Mis Habilidades</h1>
+      <img src="imagenes/capybara.jpg" alt="tu_foto" />
+      <h1>Mis Habilidades ✨</h1>
     </header>
+
+    <nav>
+      <a href="#programacion">Hard Skills</a>
+      <a href="#idiomas">Idiomas</a>
+      <a href="#desarrollo-personal">Soft Skills</a>
+      <a href="index.html">Inicio</a>
+    </nav>
 
     <section id="programacion">
       <h2>Programación</h2>
-      <div class="flecha" onclick="toggleInformacion(this)">
-        <svg viewBox="0 0 24 24">
-          <path d="M7 10l5 5 5-5z"></path>
-        </svg>
-      </div>
       <div class="habilidad">
         <h3>Pensamiento Lógico</h3>
         <p>
@@ -101,13 +113,27 @@
           ¡Descubre conmigo un universo donde la creatividad y la lógica
           convergen para superar cualquier obstáculo! 🚀💡
         </p>
-        <div class="flecha" onclick="toggleInformacion(this)">
-          <svg viewBox="0 0 24 24">
-            <path d="M7 10l5 5 5-5z"></path>
-          </svg>
-        </div>
         <embed
           src="imagenes/diploma-pensamiento-logico-data.pdf"
+          width="400px"
+          height="400px"
+          type="application/pdf"
+        />
+      </div>
+      <div class="habilidad">
+        <h3>Fundamentos de Bitcoin, Blockchain y Criptomonedas</h3>
+        <p>
+          Cuento con conocimientos sólidos en criptomonedas y cadenas de
+          bloques. Mi formación abarca conceptos esenciales sobre Bitcoin,
+          Blockchain y otras criptomonedas, brindándome una comprensión integral
+          de su funcionamiento y su impacto. Estoy familiarizado con principios
+          clave como descentralización, inmutabilidad y seguridad, así como con
+          procesos como la minería y gestión de claves. Este bagaje me capacita
+          para explorar y participar en el emocionante mundo de las finanzas
+          descentralizadas y tecnologías disruptivas.
+        </p>
+        <embed
+          src="imagenes/diploma-fundamentos-blockchain.pdf"
           width="400px"
           height="400px"
           type="application/pdf"
@@ -118,11 +144,6 @@
 
     <section id="idiomas">
       <h2>Idiomas</h2>
-      <div class="flecha" onclick="toggleInformacion(this)">
-        <svg viewBox="0 0 24 24">
-          <path d="M7 10l5 5 5-5z"></path>
-        </svg>
-      </div>
       <div class="habilidad">
         <h3>Español Nativo</h3>
         <p>
@@ -166,11 +187,6 @@
 
     <section id="desarrollo-personal">
       <h2>Desarrollo Personal</h2>
-      <div class="flecha" onclick="toggleInformacion(this)">
-        <svg viewBox="0 0 24 24">
-          <path d="M7 10l5 5 5-5z"></path>
-        </svg>
-      </div>
       <div class="habilidad">
         <h3>Liderazgo</h3>
         <p>
@@ -186,20 +202,5 @@
     <button id="volver" onclick="window.location.href='index.html'">
       Volver al Inicio
     </button>
-
-    <script>
-      function toggleInformacion(flecha) {
-        var habilidad = flecha.parentNode;
-        var parrafo = habilidad.querySelector(".habilidad p");
-        parrafo.style.display =
-          parrafo.style.display === "none" || parrafo.style.display === ""
-            ? "block"
-            : "none";
-        flecha.innerHTML =
-          parrafo.style.display === "none" || parrafo.style.display === ""
-            ? '<svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"></path></svg>'
-            : '<svg viewBox="0 0 24 24"><path d="M14 10l-5 5-5-5z"></path></svg>';
-      }
-    </script>
   </body>
 </html>
