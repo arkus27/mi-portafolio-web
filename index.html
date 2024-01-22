@@ -3,10 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <title>Portafolio de Gabriel Arrieta Bustinza</title>
+    <script>
+      // Función para mostrar el saludo y pedir el nombre
+      function mostrarSaludo() {
+        // Prompt para obtener el nombre del usuario
+        var nombre = prompt("¡Hola! ¿Cuál es tu nombre?");
+
+        // Verificar si se ingresó un nombre
+        if (nombre !== null && nombre !== "") {
+          // Mostrar mensaje de bienvenida
+          alert("¡Bienvenido, " + nombre + "!");
+          // Mensaje invitando a visitar otras secciones
+          alert(
+            "Te invitamos a explorar las demás secciones y agradecemos tu visita."
+          );
+        } else {
+          // Si no se ingresó un nombre, mostrar un mensaje genérico
+          alert("Gracias por visitarnos.");
+        }
+      }
+
+      // Función que se activa al cargar la página
+      window.onload = mostrarSaludo;
+    </script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
+      <img
+        src="imagenes/capybara.jpg"
+        alt="Imagen de perfil"
+        class="profile-image"
+      />
       <h1>
         ¡Explora el Universo de Gabriel!<br />Un Portafolio en Constante
         Evolución
@@ -17,7 +45,7 @@
       entrelazan para dar vida a experiencias únicas!
     </p>
     <div class="container">
-      <a href="Biografia.html">
+      <div class="section-link" onclick="location.href='Biografia.html';">
         <section id="biografia" class="seccion">
           <h2>Biografía</h2>
           <p>
@@ -27,9 +55,9 @@
             trayectoria y mi visión para el futuro.
           </p>
         </section>
-      </a>
+      </div>
 
-      <a href="Proyectos.html">
+      <div class="section-link" onclick="location.href='Proyectos.html';">
         <section id="Proyectos" class="seccion">
           <h2>Proyectos</h2>
           <p>
@@ -39,20 +67,23 @@
             prácticas, cada proyecto cuenta una historia única.
           </p>
         </section>
-      </a>
+      </div>
 
-      <a href="habilidades.html">
+      <div class="section-link" onclick="location.href='habilidades.html';">
         <section id="habilidades" class="seccion">
           <h2>Habilidades</h2>
           <p>
-            En la sección de Habilidades, destaco tanto mis habilidades técnicas
-            como las personales. Explora mi habilidad para tejer líneas de
-            código, así como
+            Descubre mi destreza técnica y personal en la sección de
+            Habilidades. Soy un apasionado desarrollador con experiencia en
+            HTML, CSS, JavaScript y más. Comunicativo en español, portugués e
+            inglés, poseo habilidades blandas para la resolución creativa de
+            problemas y trabajo en equipo, además de una mentalidad de
+            aprendizaje constante y adaptabilidad.
           </p>
         </section>
-      </a>
+      </div>
 
-      <a href="contacto.html">
+      <div class="section-link" onclick="location.href='contacto.html';">
         <section id="contacto" class="seccion">
           <h2>Contacto</h2>
           <p>
@@ -60,10 +91,10 @@
             conectarte directamente conmigo. ¿Te gustaría discutir una
             colaboración, compartir ideas o simplemente saludar? ¡Estoy aquí
             para escucharte! Encuentra enlaces a mis perfiles de LinkedIn,
-            Instagram y GitHub, plataformas donde comparto mi viaje y proyectos
+            Instagram y GitHub, plataformas donde comparto mi viaje y proyectos.
           </p>
         </section>
-      </a>
+      </div>
     </div>
     <p>
       Explora mi portafolio, sumérgete en cada sección y siente la pasión que
