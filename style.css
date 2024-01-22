@@ -43,6 +43,33 @@ section h2 {
   color: #3498db; /* Azul brillante */
 }
 
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.seccion {
+  flex: 0 0 48%;
+}
+
+.section-link {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 /* Estilos para el pie de página */
 footer {
   text-align: center;
