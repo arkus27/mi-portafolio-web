@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <title>Contacto</title>
     <style>
+      :root {
+        --tamano-celular: 480px; /* Tamaño para celulares */
+        --tamano-tablet: 768px; /* Tamaño para tablets */
+        --tamano-computadora: 1024px; /* Tamaño para computadoras */
+      }
+
       body {
         font-family: "Montserrat", sans-serif;
         margin: 0;
@@ -120,6 +126,25 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
+      }
+
+      @media (max-width: var(--tamano-celular)) {
+        /* Estilos específicos para celulares */
+        header h1 {
+          font-size: 1.5em;
+        }
+      }
+
+      @media (min-width: var(--tamano-celular)) and (max-width: var(--tamano-tablet)) {
+        /* Estilos específicos para tablets */
+      }
+
+      @media (min-width: var(--tamano-tablet)) and (max-width: var(--tamano-computadora)) {
+        /* Estilos específicos para tablets y computadoras */
+      }
+
+      @media (min-width: var(--tamano-computadora)) {
+        /* Estilos específicos para computadoras */
       }
     </style>
   </head>
